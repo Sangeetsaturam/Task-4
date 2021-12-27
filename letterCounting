@@ -1,0 +1,19 @@
+#2.Write a program that accepts a sentence and calculate the number of letters and digits.
+string = input("Enter String value: ")
+digit = 0
+letter = 0
+
+for char in string:
+    if char.isdigit():
+        digit = digit + 1
+    elif char.isalpha():
+        letter = letter + 1
+
+print("Total Number of Letters : ", letter)
+print("Total Number of Digits : ", digit)
+
+
+# Output:
+# Enter String value: Sangeet21
+# Total Number of Letters :  7
+# Total Number of Digits :  2
